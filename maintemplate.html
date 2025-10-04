@@ -6106,16 +6106,16 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
         <b:section class='sidebar common-widget' id='sidebar1' name='Sidebar Right (A)' showaddelement='yes'>
           <b:widget id='HTML7' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #10b981, #3b82f6); color: white; text-align: center; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">📚 Sections de la Langue Française</h3>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
+  <h3 style="margin-bottom: 20px; color: white;">🧩  Composantes de la Langue Française</h3>
   <div style="margin-bottom: 15px;">
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Grammaire</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Conjugaison</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Vocabulaire</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Orthographe</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Lecture & Compréhension</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Expression écrite</div>
-    <div class="section-badge" style="margin: 5px; display: inline-block; padding: 5px 12px; border-radius: 8px; background: rgba(255,255,255,0.2); cursor: pointer;">Expression orale</div>
+    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Grammaire</div>
+    <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Conjugaison</div>
+    <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Vocabulaire</div>
+    <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Orthographe</div>
+    <div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Lecture & Compréhension</div>
+    <div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Expression écrite</div>
+    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Expression orale</div>
   </div>
   <p style="font-size: 14px; opacity: 0.9; margin: 0;">Cliquez sur une section pour l’écouter à voix haute</p>
 </div>
@@ -6146,10 +6146,10 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='HTML5' locked='false' title='About' type='HTML' visible='true'>
+          <b:widget id='HTML5' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; text-align: center; box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">🇫🇷 Votre Niveau de Français</h3>
+  <h3 style="margin-bottom: 20px; color: white;">📊  Votre Niveau de Français</h3>
   <div style="margin-bottom: 15px;">
     <div class="level-badge level-a1" style="margin: 5px;">A1 - Débutant</div>
     <div class="level-badge level-a2" style="margin: 5px;">A2 - Élémentaire</div>
@@ -6230,74 +6230,36 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='HTML6' locked='false' title='Lecture audio' type='HTML' visible='false'>
+          <b:widget id='HTML6' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: rgb(255, 255, 255); text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
-    <h3 style="margin-bottom: 20px; color: #333333;">🎧 LISTEN TO THIS BLOG — AUDIO READER!</h3>
-    <button onclick="readBlog()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #F4B400; color: white; font-weight: bold; cursor: pointer; margin-right: 10px; transition: background 0.3s ease;">
-      🔊 Listen
-    </button>
-    <button onclick="stopReading()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #D32F2F; color: white; font-weight: bold; cursor: pointer; transition: background 0.3s ease;">
-      ⏹️ Stop
-    </button>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
+  <h3 style="margin-bottom: 20px; color: white;">⏰ Temps de Conjugaison Française</h3>
+  <div style="margin-bottom: 15px;">
+    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Présent</div>
+    <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Imparfait</div>
+    <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Passé Composé</div>
+    <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Futur Simple</div>
+    <div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Conditionnel</div>
+    <div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Subjonctif</div>
+    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Plus-que-parfait</div>
+    <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Passé Simple</div>
+    <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Futur Antérieur</div>
   </div>
-  
-  <script>
-    function readBlog() {
-      const content = document.querySelector('#post-body');
-      if (content) {
-        const text = content.innerText;
-        const speech = new SpeechSynthesisUtterance(text);
-        
-        // Essayer de trouver une voix française
-        const voices = window.speechSynthesis.getVoices();
-        const frenchVoice = voices.find(voice => voice.lang.startsWith('fr'));
-        
-        if (frenchVoice) {
-          speech.voice = frenchVoice;
-          speech.lang = 'fr-FR';
-          console.log('Voix française utilisée:', frenchVoice.name);
-        } else {
-          speech.lang = 'fr-FR'; // Essayer quand même le français
-          console.log('Aucune voix française trouvée, utilisation de la langue fr-FR');
-        }
-        
-        speech.rate = 0.9;
-        speech.pitch = 1;
-        speech.volume = 1;
-        
-        // Gérer les événements
-        speech.onstart = function() {
-          console.log('Lecture commencée');
-        };
-        
-        speech.onerror = function(event) {
-          console.log('Erreur:', event.error);
-          alert('Erreur: ' + event.error);
-        };
-        
-        speech.onend = function() {
-          console.log('Lecture terminée');
-        };
-        
-        // Essayer de lire
-        try {
-          window.speechSynthesis.speak(speech);
-        } catch (error) {
-          console.log('Erreur lors de la lecture:', error);
-          alert('Erreur lors de la lecture: ' + error.message);
-        }
-      } else {
-        alert('Please select a Blog');
-      }
-    }
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Cliquez sur un temps pour l'écouter à voix haute</p>
+</div>
 
-    function stopReading() {
-      if (window.speechSynthesis.speaking) {
-        window.speechSynthesis.cancel();
-      }
-    }
-  </script>]]></b:widget-setting>
+<script>
+  // Lecture vocale en français pour chaque temps de conjugaison
+  document.querySelectorAll('.level-badge').forEach(badge => {
+    badge.addEventListener('click', () => {
+      const speech = new SpeechSynthesisUtterance(badge.innerText);
+      speech.lang = 'fr-FR';
+      speech.rate = 0.8;
+      speech.pitch = 1;
+      window.speechSynthesis.speak(speech);
+    });
+  });
+</script>]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
   <b:include name='widget-title'/>
