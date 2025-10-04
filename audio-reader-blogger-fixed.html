@@ -1,0 +1,46 @@
+<div style="padding: 20px; border-radius: 15px; background: rgb(255, 255, 255); text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+  <h3 style="margin-bottom: 20px; color: #333333;">🎧 ÉCOUTEZ CE BLOG — LECTEUR AUDIO!</h3>
+  <button onclick="readBlog()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #F4B400; color: white; font-weight: bold; cursor: pointer; margin-right: 10px; transition: background 0.3s ease;">
+    🔊 Écouter
+  </button>
+  <button onclick="stopReading()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #D32F2F; color: white; font-weight: bold; cursor: pointer; transition: background 0.3s ease;">
+    ⏹️ Arrêter
+  </button>
+</div>
+
+<script>
+  function readBlog() {
+    // Essayer plusieurs sélecteurs pour Blogger
+    let content = document.querySelector('#post-body') || 
+                  document.querySelector('.post-body') || 
+                  document.querySelector('.entry-content') || 
+                  document.querySelector('.post-content') ||
+                  document.querySelector('article .post-body') ||
+                  document.querySelector('.post .post-body') ||
+                  document.querySelector('div[itemprop="articleBody"]') ||
+                  document.querySelector('.post-body-inner');
+    
+    if (content) {
+      const text = content.innerText;
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = 'fr-FR';
+      speech.rate = 0.9;
+      window.speechSynthesis.speak(speech);
+    } else {
+      // Debug: afficher tous les éléments possibles
+      console.log('Contenu non trouvé. Éléments disponibles:');
+      console.log('post-body:', document.querySelector('#post-body'));
+      console.log('.post-body:', document.querySelector('.post-body'));
+      console.log('.entry-content:', document.querySelector('.entry-content'));
+      console.log('article:', document.querySelector('article'));
+      console.log('Tous les divs:', document.querySelectorAll('div[class*="post"]'));
+      alert('Contenu du blog non trouvé. Vérifiez la console pour plus d\'informations.');
+    }
+  }
+
+  function stopReading() {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+    }
+  }
+</script>

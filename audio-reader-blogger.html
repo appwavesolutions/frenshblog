@@ -1,0 +1,66 @@
+<div style="padding: 20px; border-radius: 15px; background: rgb(255, 255, 255); text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+    <h3 style="margin-bottom: 20px; color: #333333;">🎧 LISTEN TO THIS BLOG — AUDIO READER!</h3>
+    <button onclick="readBlog()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #F4B400; color: white; font-weight: bold; cursor: pointer; margin-right: 10px; transition: background 0.3s ease;">
+      🔊 Listen
+    </button>
+    <button onclick="stopReading()" style="padding: 12px 25px; border: none; border-radius: 30px; background: #D32F2F; color: white; font-weight: bold; cursor: pointer; transition: background 0.3s ease;">
+      ⏹️ Stop
+    </button>
+  </div>
+  
+  <script>
+    function readBlog() {
+      const content = document.querySelector('#post-body');
+      if (content) {
+        const text = content.innerText;
+        const speech = new SpeechSynthesisUtterance(text);
+        
+        // Essayer de trouver une voix française
+        const voices = window.speechSynthesis.getVoices();
+        const frenchVoice = voices.find(voice => voice.lang.startsWith('fr'));
+        
+        if (frenchVoice) {
+          speech.voice = frenchVoice;
+          speech.lang = 'fr-FR';
+          console.log('Voix française utilisée:', frenchVoice.name);
+        } else {
+          speech.lang = 'fr-FR'; // Essayer quand même le français
+          console.log('Aucune voix française trouvée, utilisation de la langue fr-FR');
+        }
+        
+        speech.rate = 0.9;
+        speech.pitch = 1;
+        speech.volume = 1;
+        
+        // Gérer les événements
+        speech.onstart = function() {
+          console.log('Lecture commencée');
+        };
+        
+        speech.onerror = function(event) {
+          console.log('Erreur:', event.error);
+          alert('Erreur: ' + event.error);
+        };
+        
+        speech.onend = function() {
+          console.log('Lecture terminée');
+        };
+        
+        // Essayer de lire
+        try {
+          window.speechSynthesis.speak(speech);
+        } catch (error) {
+          console.log('Erreur lors de la lecture:', error);
+          alert('Erreur lors de la lecture: ' + error.message);
+        }
+      } else {
+        alert('Please select a Blog');
+      }
+    }
+
+    function stopReading() {
+      if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+      }
+    }
+  </script>
