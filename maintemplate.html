@@ -6235,31 +6235,18 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
               <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
   <h3 style="margin-bottom: 20px; color: white;">⏰ Temps de Conjugaison Française</h3>
   <div style="margin-bottom: 15px;">
-    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Présent</div>
-    <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Imparfait</div>
-    <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Passé Composé</div>
-    <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Futur Simple</div>
-    <div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Conditionnel</div>
-    <div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Subjonctif</div>
-    <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Plus-que-parfait</div>
-    <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Passé Simple</div>
-    <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Futur Antérieur</div>
+    <a href="/2025/10/le-present-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Présent</div></a>
+    <a href="/2025/10/limparfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Imparfait</div></a>
+    <a href="/2025/10/le-passe-compose-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Passé Composé</div></a>
+    <a href="/2025/10/le-futur-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Futur Simple</div></a>
+    <a href="/2025/10/le-conditionnel-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Conditionnel</div></a>
+    <a href="/2025/10/le-subjonctif-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Subjonctif</div></a>
+    <a href="/2025/10/le-plus-que-parfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Plus-que-parfait</div></a>
+    <a href="/2025/10/le-passe-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Passé Simple</div></a>
+    <a href="/2025/10/le-futur-anterieur-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Futur Antérieur</div></a>
   </div>
-  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Cliquez sur un temps pour l'écouter à voix haute</p>
-</div>
-
-<script>
-  // Lecture vocale en français pour chaque temps de conjugaison
-  document.querySelectorAll('.level-badge').forEach(badge => {
-    badge.addEventListener('click', () => {
-      const speech = new SpeechSynthesisUtterance(badge.innerText);
-      speech.lang = 'fr-FR';
-      speech.rate = 0.8;
-      speech.pitch = 1;
-      window.speechSynthesis.speak(speech);
-    });
-  });
-</script>]]></b:widget-setting>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez un temps pour commencer votre apprentissage</p>
+</div>]]></b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
   <b:include name='widget-title'/>
