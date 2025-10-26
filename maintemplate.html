@@ -4826,17 +4826,6 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
         </b:widget>
-        <b:widget id='HTML2' locked='false' title='Hot Widget' type='HTML' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='content'>recent/hot-posts</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-        </b:widget>
       </b:section>
     </div>
  <div class='clearfix'/>
@@ -6117,78 +6106,12 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
       <!-- Sidebar Wrapper -->
       <div id='sidebar-wrapper'>
         <b:section class='sidebar common-widget' cond='data:view.isHomepage' id='sidebar1' name='Sidebar Right (A)' showaddelement='yes'>
-          <b:widget id='HTML10' locked='false' title='' type='HTML' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #0ea5e9, #3b82f6); color: white; text-align: center; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">🔤 Modes Verbaux Français</h3>
-  <div style="margin-bottom: 15px;">
-    <!-- Modes personnels -->
-    <a href="/2025/10/indicatif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #22c55e; cursor: pointer;">Indicatif</div>
-    </a>
-    <a href="/2025/10/subjonctif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #a855f7; cursor: pointer;">Subjonctif</div>
-    </a>
-    <a href="/2025/10/conditionnel.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Conditionnel</div>
-    </a>
-    <a href="/2025/10/imperatif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Impératif</div>
-    </a>
-
-    <!-- Modes impersonnels -->
-    <a href="/2025/10/infinitif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Infinitif</div>
-    </a>
-    <a href="/2025/10/participe.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Participe</div>
-    </a>
-    <a href="/2025/10/gerondif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #6366f1; cursor: pointer;">Gérondif</div>
-    </a>
-  </div>
-  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Choisissez un mode verbal pour découvrir ses usages et ses temps</p>
-</div>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-          </b:widget>
-          <b:widget id='HTML8' locked='false' title='' type='HTML' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; text-align: center; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">📚 Syntaxe Française</h3>
-  <div style="margin-bottom: 15px;">
-    <a href="/2025/10/la-subordination-en-francais.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Subordination</div>
-    </a>
-    <a href="/2025/10/la-coordination-en-francais.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Coordination</div>
-    </a>
-    <a href="/2025/10/les-propositions-complexes-en-francais.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Propositions Complexes</div>
-    </a>
-    <a href="/2025/10/les-conjonctions-en-francais.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Conjonctions</div>
-    </a>
-  </div>
-  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez un thème pour approfondir votre compréhension de la syntaxe</p>
-</div>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-          </b:widget>
           <b:widget id='HTML7' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">🧩  Composantes de la Langue Française</h3>
+  <a href="/2025/10/les-composantes-de-la-langue-francaise.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">🧩  Composantes de la Langue Française</h3>
+  </a>
   <div style="margin-bottom: 15px;">
     <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Grammaire</div>
     <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Conjugaison</div>
@@ -6227,10 +6150,156 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
           </b:widget>
+          <b:widget id='HTML9' locked='false' title='' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; text-align: center; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);">
+  <a href="/2025/10/les-classes-grammaticales-en-francais.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">📚 Classes Grammaticales Françaises</h3>
+  </a>
+  <div style="margin-bottom: 15px;">
+    <a href="/2025/10/le-nom-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Nom</div>
+    </a>
+    <a href="/2025/10/le-pronom-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Pronom</div>
+    </a>
+    <a href="/2025/10/le-verbe-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Verbe</div>
+    </a>
+    <a href="/2025/10/ladjectif-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Adjectif</div>
+    </a>
+    <a href="/2025/10/ladverbe-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Adverbe</div>
+    </a>
+    <a href="/2025/10/la-preposition-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Préposition</div>
+    </a>
+    <a href="/2025/10/la-conjonction-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Conjonction</div>
+    </a>
+    <a href="/2025/10/linterjection-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Interjection</div>
+    </a>
+    <a href="/2025/10/le-determinant-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Déterminant</div>
+    </a>
+  </div>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez une classe grammaticale pour explorer ses détails</p>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='HTML8' locked='false' title='' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; text-align: center; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);">
+  <a href="/2025/10/la-syntaxe-francaise.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">📚 Syntaxe Française</h3>
+  </a>
+  <div style="margin-bottom: 15px;">
+    <a href="/2025/10/la-subordination-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Subordination</div>
+    </a>
+    <a href="/2025/10/la-coordination-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Coordination</div>
+    </a>
+    <a href="/2025/10/les-propositions-complexes-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Propositions Complexes</div>
+    </a>
+    <a href="/2025/10/les-conjonctions-en-francais.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Conjonctions</div>
+    </a>
+  </div>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez un thème pour approfondir votre compréhension de la syntaxe</p>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='HTML10' locked='false' title='' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #0ea5e9, #3b82f6); color: white; text-align: center; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);">
+  <a href="/2025/10/les-modes-verbaux-en-francais.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">🔤 Modes Verbaux Français</h3>
+  </a>
+  <div style="margin-bottom: 15px;">
+    <!-- Modes personnels -->
+    <a href="/2025/10/indicatif.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #22c55e; cursor: pointer;">Indicatif</div>
+    </a>
+    <a href="/2025/10/subjonctif.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #a855f7; cursor: pointer;">Subjonctif</div>
+    </a>
+    <a href="/2025/10/conditionnel.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Conditionnel</div>
+    </a>
+    <a href="/2025/10/imperatif.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Impératif</div>
+    </a>
+
+    <!-- Modes impersonnels -->
+    <a href="/2025/10/infinitif.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Infinitif</div>
+    </a>
+    <a href="/2025/10/participe.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Participe</div>
+    </a>
+    <a href="/2025/10/gerondif.html" style="text-decoration: none;">
+      <div class="level-badge" style="margin: 5px; background: #6366f1; cursor: pointer;">Gérondif</div>
+    </a>
+  </div>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Choisissez un mode verbal pour découvrir ses usages et ses temps</p>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
+          <b:widget id='HTML6' locked='false' title='' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
+  <a href="/2025/10/les-temps-de-conjugaison-en-francais.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">⏰ Temps de Conjugaison Française</h3>
+  </a>
+  <div style="margin-bottom: 15px;">
+    <a href="/2025/10/le-present-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Présent</div></a>
+    <a href="/2025/10/limparfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Imparfait</div></a>
+    <a href="/2025/10/le-passe-compose-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Passé Composé</div></a>
+    <a href="/2025/10/le-futur-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Futur Simple</div></a>
+    <a href="/2025/10/le-conditionnel-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Conditionnel</div></a>
+    <a href="/2025/10/le-subjonctif-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Subjonctif</div></a>
+    <a href="/2025/10/le-plus-que-parfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Plus-que-parfait</div></a>
+    <a href="/2025/10/le-passe-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Passé Simple</div></a>
+    <a href="/2025/10/le-futur-anterieur-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Futur Antérieur</div></a>
+  </div>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez un temps pour commencer votre apprentissage</p>
+</div>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
           <b:widget id='HTML5' locked='false' title='' type='HTML' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; text-align: center; box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">📊  Votre Niveau de Français</h3>
+  <a href="/2025/10/les-niveaux-de-francais-a1-c2.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">📊  Votre Niveau de Français</h3>
+  </a>
   <div style="margin-bottom: 15px;">
     <div class="level-badge level-a1" style="margin: 5px;">A1 - Débutant</div>
     <div class="level-badge level-a2" style="margin: 5px;">A2 - Élémentaire</div>
@@ -6259,116 +6328,6 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
     if (window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
     }
-  }
-</script>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-          </b:widget>
-          <b:widget id='HTML6' locked='false' title='' type='HTML' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">⏰ Temps de Conjugaison Française</h3>
-  <div style="margin-bottom: 15px;">
-    <a href="/2025/10/le-present-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Présent</div></a>
-    <a href="/2025/10/limparfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Imparfait</div></a>
-    <a href="/2025/10/le-passe-compose-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Passé Composé</div></a>
-    <a href="/2025/10/le-futur-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Futur Simple</div></a>
-    <a href="/2025/10/le-conditionnel-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Conditionnel</div></a>
-    <a href="/2025/10/le-subjonctif-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Subjonctif</div></a>
-    <a href="/2025/10/le-plus-que-parfait-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Plus-que-parfait</div></a>
-    <a href="/2025/10/le-passe-simple-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Passé Simple</div></a>
-    <a href="/2025/10/le-futur-anterieur-en-francais.html" style="text-decoration: none;"><div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Futur Antérieur</div></a>
-  </div>
-  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez un temps pour commencer votre apprentissage</p>
-</div>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-          </b:widget>
-          <b:widget id='HTML9' locked='false' title='' type='HTML' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #4f46e5, #6366f1); color: white; text-align: center; box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);">
-  <h3 style="margin-bottom: 20px; color: white;">📚 Classes Grammaticales Françaises</h3>
-  <div style="margin-bottom: 15px;">
-    <a href="/2025/10/le-nom-en-francais.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Nom</div>
-    </a>
-    <a href="/2025/10/pronom.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Pronom</div>
-    </a>
-    <a href="/2025/10/verbe.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Verbe</div>
-    </a>
-    <a href="/2025/10/adjectif.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #ef4444; cursor: pointer;">Adjectif</div>
-    </a>
-    <a href="/2025/10/adverbe.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #8b5cf6; cursor: pointer;">Adverbe</div>
-    </a>
-    <a href="/2025/10/preposition.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #6b7280; cursor: pointer;">Préposition</div>
-    </a>
-    <a href="/2025/10/conjonction.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #10b981; cursor: pointer;">Conjonction</div>
-    </a>
-    <a href="/2025/10/interjection.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #3b82f6; cursor: pointer;">Interjection</div>
-    </a>
-    <a href="/2025/10/determinant.html" style="text-decoration: none;">
-      <div class="level-badge" style="margin: 5px; background: #f59e0b; cursor: pointer;">Déterminant</div>
-    </a>
-  </div>
-  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Sélectionnez une classe grammaticale pour explorer ses détails</p>
-</div>]]></b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-          </b:widget>
-          <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: rgb(255, 255, 255); text-align: center; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
-  <h3 style="margin-bottom: 20px; color: #333333;">🌐 Translate This Blog</h3>
-  <div id="google_translate_element" style="margin-bottom: 10px;"></div>
-</div>
-
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'ar,fr',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, 'google_translate_element');
-  }
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script>
-  function translatePage(lang) {
-    var iframe = document.querySelector('iframe.goog-te-menu-frame');
-    if (!iframe) {
-      alert('Translation tool is still loading. Please try again.');
-      return;
-    }
-    var iframeBody = iframe.contentDocument || iframe.contentWindow.document;
-    var menuItems = iframeBody.querySelectorAll('.goog-te-menu2-item span.text');
-    menuItems.forEach(function (menuItem) {
-      if (menuItem.innerText === lang || menuItem.innerHTML.includes(lang)) {
-        menuItem.click();
-      }
-    });
   }
 </script>]]></b:widget-setting>
             </b:widget-settings>
@@ -6471,135 +6430,6 @@ height: 100%;
   </div>
 </b:includable>
           </b:widget>
-          <b:widget id='PopularPosts2' locked='false' title='Most Popular' type='PopularPosts' version='2' visible='true'>
-            <b:widget-settings>
-              <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-              <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-              <b:widget-setting name='showSnippets'>true</b:widget-setting>
-              <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main' var='this'>
-      <b:include name='widget-title'/>
-      <div class='widget-content'>
-        <b:if cond='data:widget.sectionId == &quot;hot-section&quot;'>
-           <div class='hot-posts'>  
-             <div class='hot-card-left'>
-               <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i == 0' data='post' name='postContent'/>
-              </b:loop>
-            </div>
-             <b:tag class='hot-card-center' cond='data:posts.length gt 1' name='div'>
-              <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i == 1' data='post' name='postContent'/>
-              </b:loop>
-            </b:tag>
-             <b:tag class='hot-card-right' cond='data:posts.length gt 2' name='div'>
-              <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i in [2,3,4]' data='post' name='postContent'/>
-              </b:loop>
-            </b:tag>
-          </div>
-           <b:else/>
-        <b:loop values='data:posts' var='post'>
-          <b:include data='post' name='postContent'/>
-        </b:loop>
-        </b:if>
-      </div>
-    </b:includable>
-            <b:includable id='blogThisShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='bylineByName' var='byline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='bylineRegion' var='regionItems'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='commentsLink'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='commentsLinkIframe'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='defaultContent' var='post'>
-               <div class='post'>
-        <div class='post-content'>
-          <a class='post-image-link' expr:href='data:post.url'>
-            <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 72, &quot;1:1&quot;) : resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
-              <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w100/nth.png'/>
-            </b:if>
-          </a>
-          <div class='post-info'>
-            <h2 class='post-title'>
-              <a expr:href='data:post.url'><data:post.title/></a>
-            </h2>
-            <div class='post-meta'>
-              <span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-          </div>
-        </div>
-      </div>
-            </b:includable>
-            <b:includable id='emailPostIcon'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='facebookShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='footerBylines'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='googlePlusShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='headerByline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='hotBox' var='post'>
-            <b:if cond='data:i lt 5'>
-              <div class='hot-item'>
-              <b:class expr:name='&quot;item-&quot;+data:i'/>               
-            <div class='hot-item-inner'>
-              <b:if cond='data:i in [0,1]'>
-                               <b:if cond='data:post.labels'><span class='post-tag'><data:post.labels.first.name/></span></b:if>
-            </b:if>
-          <a class='post-image-link' expr:href='data:post.url'>
-            <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 72, &quot;1:1&quot;) : resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
-              <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w100/nth.png'/>
-            </b:if>
-          </a>
-          <div class='post-info'>
-            
-            <h2 class='post-title'>
-              <a expr:href='data:post.url'><data:post.title/></a>
-            </h2>
-            <b:if cond='data:i in [0,1]'>
-            <div class='post-meta'>
-              <span class='post-author'><a expr:href='data:post.author.profileUrl' expr:title='data:post.author.name' target='_blank'><data:post.author.name/></a></span><span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-              <b:else/>
-            <div class='post-meta'>
-              <span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-            </b:if>
-          </div>
-      </div>
-              </div>
-            </b:if>
-            </b:includable>
-            <b:includable id='linkShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='otherSharingButton'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='platformShare'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postAuthor'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postCommentsLink'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postContent' var='post'>
-               <b:if cond='data:widget.sectionId == &quot;hot-section&quot;'>
-        <b:include data='post' name='hotBox'/>
-        <b:else/>
-        <b:include data='post' name='defaultContent'/>
-            </b:if>
-          </b:includable>
-            <b:includable id='postJumpLink' var='post'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postLabels'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postReactions'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postShareButtons'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='postTimestamp'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButton'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtonContent'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtons'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingButtonsMenu'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='sharingPlatformIcon'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostByline'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostContent'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostThumbnail'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPostTitle'><b:comment>Replaced</b:comment></b:includable>
-            <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
-          </b:widget>
           <b:widget id='Label1' locked='false' title='Labels' type='Label' version='2' visible='true'>
             <b:widget-settings>
               <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
@@ -6658,163 +6488,9 @@ height: 100%;
 <div id='footer-wrapper'> 
   <div class='container row'>
     <div class='footer-widgets-wrap'>
-      <b:section class='footer common-widget' id='footer-sec1' maxwidgets='3' name='Section (Left)' showaddelement='yes'>
-        <b:widget id='HTML3' locked='false' title='📚 Leçons Récentes' type='HTML' version='2' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='content'>3/random/post-list</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-        </b:widget>
-      </b:section>
-      <b:section class='footer common-widget' id='footer-sec2' maxwidgets='3' name='Section (Center)' showaddelement='yes'>
-        <b:widget id='HTML4' locked='false' title='🎯 Exercices Populaires' type='HTML' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='content'>3/recent/post-list</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-</b:includable>
-        </b:widget>
-      </b:section>
-      <b:section class='footer common-widget' id='footer-sec3' maxwidgets='3' name='Section (Right)' showaddelement='yes'>
-        <b:widget id='PopularPosts3' locked='false' title='⭐ Leçons Populaires' type='PopularPosts' version='2' visible='true'>
-          <b:widget-settings>
-            <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
-            <b:widget-setting name='showThumbnails'>true</b:widget-setting>
-            <b:widget-setting name='showSnippets'>true</b:widget-setting>
-            <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main' var='this'>
-      <b:include name='widget-title'/>
-      <div class='widget-content'>
-        <b:if cond='data:widget.sectionId == &quot;hot-section&quot;'>
-           <div class='hot-posts'>  
-             <div class='hot-card-left'>
-               <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i == 0' data='post' name='postContent'/>
-              </b:loop>
-            </div>
-             <b:tag class='hot-card-center' cond='data:posts.length gt 1' name='div'>
-              <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i == 1' data='post' name='postContent'/>
-              </b:loop>
-            </b:tag>
-             <b:tag class='hot-card-right' cond='data:posts.length gt 2' name='div'>
-              <b:loop index='i' values='data:posts' var='post'>
-                <b:include cond='data:i in [2,3,4]' data='post' name='postContent'/>
-              </b:loop>
-            </b:tag>
-          </div>
-           <b:else/>
-        <b:loop values='data:posts' var='post'>
-          <b:include data='post' name='postContent'/>
-        </b:loop>
-        </b:if>
-      </div>
-    </b:includable>
-          <b:includable id='blogThisShare'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='bylineByName' var='byline'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='bylineRegion' var='regionItems'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='commentsLink'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='commentsLinkIframe'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='defaultContent' var='post'>
-               <div class='post'>
-        <div class='post-content'>
-          <a class='post-image-link' expr:href='data:post.url'>
-            <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 72, &quot;1:1&quot;) : resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
-              <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w100/nth.png'/>
-            </b:if>
-          </a>
-          <div class='post-info'>
-            <h2 class='post-title'>
-              <a expr:href='data:post.url'><data:post.title/></a>
-            </h2>
-            <div class='post-meta'>
-              <span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-          </div>
-        </div>
-      </div>
-            </b:includable>
-          <b:includable id='emailPostIcon'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='facebookShare'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='footerBylines'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='googlePlusShare'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='headerByline'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='hotBox' var='post'>
-            <b:if cond='data:i lt 5'>
-              <div class='hot-item'>
-              <b:class expr:name='&quot;item-&quot;+data:i'/>               
-            <div class='hot-item-inner'>
-              <b:if cond='data:i in [0,1]'>
-                               <b:if cond='data:post.labels'><span class='post-tag'><data:post.labels.first.name/></span></b:if>
-            </b:if>
-          <a class='post-image-link' expr:href='data:post.url'>
-            <b:if cond='data:post.featuredImage'>
-              <img class='post-thumb' expr:alt='data:post.title' expr:src='data:post.featuredImage.isYouTube ? resizeImage(data:post.featuredImage.youtubeMaxResDefaultUrl.jsonEscaped, 72, &quot;1:1&quot;) : resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)'/>
-              <b:else/>
-              <img class='post-thumb' expr:alt='data:post.title' src='https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w100/nth.png'/>
-            </b:if>
-          </a>
-          <div class='post-info'>
-            
-            <h2 class='post-title'>
-              <a expr:href='data:post.url'><data:post.title/></a>
-            </h2>
-            <b:if cond='data:i in [0,1]'>
-            <div class='post-meta'>
-              <span class='post-author'><a expr:href='data:post.author.profileUrl' expr:title='data:post.author.name' target='_blank'><data:post.author.name/></a></span><span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-              <b:else/>
-            <div class='post-meta'>
-              <span class='post-date published' expr:datetime='data:post.date.iso8601'><data:post.date/></span>
-            </div>
-            </b:if>
-          </div>
-      </div>
-              </div>
-            </b:if>
-            </b:includable>
-          <b:includable id='linkShare'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='otherSharingButton'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='platformShare'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postAuthor'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postCommentsLink'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postContent' var='post'>
-               <b:if cond='data:widget.sectionId == &quot;hot-section&quot;'>
-        <b:include data='post' name='hotBox'/>
-        <b:else/>
-        <b:include data='post' name='defaultContent'/>
-            </b:if>
-          </b:includable>
-          <b:includable id='postJumpLink' var='post'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postLabels'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postLocation'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postReactions'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postShareButtons'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='postTimestamp'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='sharingButton'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='sharingButtonContent'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='sharingButtons'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='sharingButtonsMenu'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='sharingPlatformIcon'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='snippetedPostByline'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='snippetedPostContent'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='snippetedPostThumbnail'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='snippetedPostTitle'><b:comment>Replaced</b:comment></b:includable>
-          <b:includable id='snippetedPosts'><b:comment>Replaced</b:comment></b:includable>
-        </b:widget>
-      </b:section>
+      <b:section class='footer common-widget' id='footer-sec1' maxwidgets='3' name='Section (Left)' showaddelement='yes'/>
+      <b:section class='footer common-widget' id='footer-sec2' maxwidgets='3' name='Section (Center)' showaddelement='yes'/>
+      <b:section class='footer common-widget' id='footer-sec3' maxwidgets='3' name='Section (Right)' showaddelement='yes'/>
     </div>
   </div>
 
