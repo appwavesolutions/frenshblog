@@ -6338,6 +6338,50 @@ var monthFormat = ["January", "February", "March", "April", "May", "June", "July
   </div>
 </b:includable>
           </b:widget>
+          <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'><![CDATA[<div style="padding: 20px; border-radius: 15px; background: linear-gradient(135deg, #e3405c, #ff6b8a); color: white; text-align: center; box-shadow: 0 4px 15px rgba(227, 64, 92, 0.3);">
+  <a href="/2025/10/les-verbes-frequents-en-francais.html" style="text-decoration: none;">
+    <h3 style="margin-bottom: 20px; color: white; cursor: pointer; transition: opacity 0.3s;">🔤  Les Verbes Fréquents en Français</h3>
+  </a>
+  <div style="margin-bottom: 15px;">
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #10b981; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes essentiels</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #3b82f6; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes de communication</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #f59e0b; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes de pensée et d’opinion</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #ef4444; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes d’action courante</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #8b5cf6; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes de sentiment et d’émotion</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #6b7280; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes liés à la vie quotidienne</div>
+    <div class="section-badge" style="display: inline-block; margin: 5px; background: #14b8a6; padding: 8px 15px; border-radius: 20px; cursor: pointer;">Verbes utiles à l’écrit et à l’oral</div>
+  </div>
+  <p style="font-size: 14px; opacity: 0.9; margin: 0;">Cliquez sur une catégorie pour l’écouter à voix haute</p>
+</div>
+
+<script>
+  // Lecture vocale en français pour chaque section
+  document.querySelectorAll('.section-badge').forEach(badge => {
+    badge.addEventListener('click', () => {
+      const speech = new SpeechSynthesisUtterance(badge.innerText);
+      speech.lang = 'fr-FR';
+      speech.rate = 1;
+      speech.pitch = 1;
+      window.speechSynthesis.speak(speech);
+    });
+  });
+
+  function stopReading() {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+    }
+  }
+</script>]]></b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+          </b:widget>
         </b:section>
         <b:section class='sidebar' cond='data:view.isHomepage' id='social-widget' maxwidgets='1' name='Social Widget' showaddelement='yes'>
           <b:widget id='LinkList75' locked='true' title='Social Plugin' type='LinkList' version='2' visible='false'>
